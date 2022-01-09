@@ -29,7 +29,7 @@ registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 // TODO: Implement asset caching
 
 registerRoute(
-  matchCallback,
+  warmStrategyCache,
   new offlineFallback({
     cacheName,
     plugins: [
